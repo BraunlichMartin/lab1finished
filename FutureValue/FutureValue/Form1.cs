@@ -22,6 +22,10 @@ namespace FutureValue
         }
 
         // TODO: Declare the rectangular array and the row index here
+        //step 2 on p. 258 -MWB_1/25/2019
+        string[,] rectangularArray = new string[10,4];
+        int rowCounter = 0;
+
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
@@ -44,6 +48,20 @@ namespace FutureValue
                     txtMonthlyInvestment.Focus();
 
                     // TODO: Add the calculation to the rectangular array here
+                    //-MWB_1/25/2019
+
+                    rectangularArray[0, 0] = "Inv/Mo";
+                    rectangularArray[0, 1] = "Rate";
+                    rectangularArray[0, 2] = "Years";
+                    rectangularArray[0, 3] = "Future Value";
+
+
+                    rectangularArray[rowCounter+1, 0] = monthlyInvestment.ToString();
+                    rectangularArray[rowCounter+1, 1] = interestRateYearly.ToString();
+                    rectangularArray[rowCounter+1, 2] = years.ToString();
+                    rectangularArray[rowCounter+1, 3] = futureValue.ToString("c");
+                    rowCounter++;
+
                 }
             }
             catch (Exception ex)
@@ -57,6 +75,15 @@ namespace FutureValue
         private void btnExit_Click(object sender, EventArgs e)
         {
             // TODO: Display the rectangular array in a dialog box here
+            //-MWB_1/25/2019
+            string outString="";
+            
+            for(int row = 0; row < 10; row++)
+            {
+                outString += rectangularArray[row, 0] + "\t" + rectangularArray[row, 1] + "\t" + rectangularArray[row, 2] + "\t" + rectangularArray[row, 3] + "\n";
+            }
+
+            MessageBox.Show(outString, "Future Value Calculations");
             this.Close();
         }
 

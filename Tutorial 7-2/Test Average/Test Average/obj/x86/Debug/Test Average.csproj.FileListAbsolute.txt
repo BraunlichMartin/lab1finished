@@ -1,0 +1,9 @@
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\bin\Debug\Test Average.exe
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\bin\Debug\Test Average.pdb
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csprojAssemblyReference.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test_Average.Form1.resources
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test_Average.Properties.Resources.resources
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.GenerateResource.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.csproj.CoreCompileInputs.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.exe
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-2\Test Average\Test Average\obj\x86\Debug\Test Average.pdb

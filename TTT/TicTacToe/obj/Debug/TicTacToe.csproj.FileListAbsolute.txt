@@ -1,0 +1,10 @@
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\bin\Debug\TicTacToe.exe.config
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\bin\Debug\TicTacToe.exe
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\bin\Debug\TicTacToe.pdb
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.TTTForm.resources
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.exe
+E:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\TTT\TicTacToe\obj\Debug\TicTacToe.pdb

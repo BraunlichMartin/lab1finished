@@ -22,6 +22,9 @@ namespace InvoiceTotal
 		}
 
         // TODO: declare class variables for array and list here
+        //step 2 from page 257-MWB_1/24/2019
+        decimal[] invoiceTotalArray = new decimal[5];
+        int index=0;
 
         private void btnCalculate_Click(object sender, EventArgs e)
 		{
@@ -56,7 +59,13 @@ namespace InvoiceTotal
                         txtTotal.Text = invoiceTotal.ToString();
 
                         // TODO:  Add invoice total to the array here
-
+                        //-MWB_1/24/2019
+                        foreach (decimal d in invoiceTotalArray)
+                        {
+                            invoiceTotalArray[index] = invoiceTotal;
+                        }
+                            index++;
+                        
                     }
                     else
                     {
@@ -64,6 +73,7 @@ namespace InvoiceTotal
                             "Subtotal must be greater than 0 and less than 10,000.",
                             "Entry Error");
                     }
+                    
                 }
             }
             catch (FormatException)
@@ -74,17 +84,39 @@ namespace InvoiceTotal
             }
             catch (IndexOutOfRangeException)
             {
+
+                //changed "3" to "5" because the array has five elements-MWB_1/24/2019
                 MessageBox.Show(
-                    "You can only enter 3 values",
+                    "You can only enter 5 values",
                     "Entry Error");
             }
 
             txtSubtotal.Focus();
+
+            
         }
 
-		private void btnExit_Click(object sender, EventArgs e)
+        
+
+        private void btnExit_Click(object sender, EventArgs e)
 		{
+            //sorting invoiceTotalArray from lowest to highest-MWB_1/25/2019
+            Array.Sort(invoiceTotalArray);
+
             // TODO: add code that displays dialog boxes here
+            //-MWB_1/24/2019
+            string totals = "";
+            foreach (decimal d in invoiceTotalArray)
+                if(d!=0)
+                {
+                    totals += d + "\n";
+                    
+                }
+
+            
+            MessageBox.Show(totals, "Order Totals");
+
+            
 
             this.Close();
 		}

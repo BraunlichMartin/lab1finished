@@ -24,6 +24,7 @@ namespace Test_Score_List
             try
             {
                 // Open the TestScores.txt file.
+                //copied "TestScores.txt" from tutorial 7-2 bin/debug folder to 7-4 bin/debug folder -MWB_1/24/2019
                 StreamReader inputFile = File.OpenText("TestScores.txt");
 
                 // Read the scores into the list.

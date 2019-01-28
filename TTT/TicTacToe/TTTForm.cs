@@ -15,6 +15,7 @@ namespace TicTacToe
         public TTTForm()
         {
             InitializeComponent();
+            
         }
 
         const string USER_SYMBOL = "X";
@@ -55,17 +56,33 @@ namespace TicTacToe
         // This method takes a row (in the range of 0 - 4) and returns true if 
         // the row on the form contains 5 Xs or 5 Os.
         // Use it as a model for writing IsColumnWinner
+        //now uses an array of labels to store the board info-MWB_1/26/20019
+        private Label[,] arrayBoard= new Label[SIZE, SIZE];
         private bool IsRowWinner(int row)
         {
-            Label square = GetSquare(row, 0);
-            string symbol = square.Text;
+            //Label square = GetSquare(row, 0);
+            arrayBoard[row, 0] = GetSquare(row, 0);
+            string symbol = arrayBoard[row, 0].Text;
+
+            for (int col = 1; col < SIZE; col++)
+            {
+                arrayBoard[row, col] = GetSquare(row, col);
+                if (symbol == EMPTY || arrayBoard[row, col].Text != symbol)
+                    return false;
+            }
+
+
+            /*string symbol = square.Text;
+            
             for (int col = 1; col < SIZE; col++)
             {
                 square = GetSquare(row, col);
                 if (symbol == EMPTY || square.Text != symbol)
                     return false;
             }
+            */
             return true;
+            
         }
 
         //* TODO:  finish all of these that return true
@@ -74,8 +91,19 @@ namespace TicTacToe
             return true;
         }
 
+        //same as is isRowWinner but now col switched for row-MWB_1/26/2019
         private bool IsColumnWinner(int col)
         {
+            arrayBoard[0, col] = GetSquare(0, col);
+            string symbol = arrayBoard[0, col].Text;
+
+            for (int row = 1; row < SIZE; row++)
+            {
+                arrayBoard[row, col] = GetSquare(row, col);
+                if (symbol == EMPTY || arrayBoard[row, col].Text != symbol)
+                    return false;
+            }
+
             return true;
         }
 
@@ -86,6 +114,18 @@ namespace TicTacToe
 
         private bool IsDiagonal1Winner()
         {
+            //-MWB_1/26/2019
+            int row = 0;
+            arrayBoard[row, 0] = GetSquare(row, 0);
+            string symbol = arrayBoard[row, 0].Text;
+            for (row = 0; row < SIZE; row++)
+            {
+                arrayBoard[row, row] = GetSquare(row, row);
+                if (symbol == EMPTY || arrayBoard[row, row].Text != symbol)
+                    return false;
+
+            }
+
             return true;
         }
 
@@ -109,6 +149,17 @@ namespace TicTacToe
 
         private bool IsFull()
         {
+        //-MWB_1/26/2019
+            for (int row = 0; row < SIZE; row++)
+            {
+                for (int col = 0; col < SIZE; col++)
+                {
+                    arrayBoard[row, col] = GetSquare(row, col);
+                    if (arrayBoard[row, col].Text == EMPTY)
+                        return false;
+                }
+            }
+
             return true;
         }
 
@@ -163,26 +214,43 @@ namespace TicTacToe
         }
 
         //* TODO:  finish this
+        //-MWB_1/26/2019
         private void ResetArray()
         {
+            DisableAllSquares();
+            EnableAllSquares();
+            for (int col = 0; col < SIZE; col++)
+            {
+                for (int row = 0; row < SIZE; row++)
+                {
+                    arrayBoard[row, col] = GetSquare(row, col);
+                    arrayBoard[row, col].ForeColor = Color.Black;
+                    arrayBoard[row, col].Text = EMPTY;
+                }
+            }
+
+
+            resultLabel.Text = "";
         }
 
         //* TODO:  Modify this so it uses the array rather than the UI to make the move.
         // Setting the text and disabling the square will happen in the SyncArrayAndSquares method
+        //-MWB_1/26/2019
         private void MakeComputerMove()
         {
             Random gen = new Random();
             int row;
             int column;
-            Label square;
+            //Label square;
             do
             {
                 row = gen.Next(0, SIZE);
                 column = gen.Next(0, SIZE);
-                square = GetSquare(row, column);
-            } while (square.Text != EMPTY);
-            square.Text = COMPUTER_SYMBOL;
-            DisableSquare(square);
+                //square = GetSquare(row, column);
+                arrayBoard[row, column] = GetSquare(row, column);
+            } while (arrayBoard[row, column].Text != EMPTY);
+            arrayBoard[row, column].Text = COMPUTER_SYMBOL;
+            DisableSquare(arrayBoard[row, column]);
         }
 
         // ALL OF THESE METHODS MANIPULATE THE UI AND SHOULDN'T CHANGE
@@ -272,14 +340,15 @@ namespace TicTacToe
         // Setting the enabled property changes the look and feel of the cell.
         // Instead, this code removes the event handler from each square.
         // Use it when someone wins or the board is full to prevent clicking a square.
+        //-MWB_1/26/2019
         private void DisableAllSquares()
         {
             for (int row = 0; row < SIZE; row++)
             {
                 for (int col = 0; col < SIZE; col++)
                 {
-                    Label square = GetSquare(row, col);
-                    DisableSquare(square);
+                    arrayBoard[row, col] = GetSquare(row, col);
+                    DisableSquare(arrayBoard[row, col]);
                 }
             }
         }
@@ -292,14 +361,15 @@ namespace TicTacToe
         }
 
         // You'll need this method to allow the user to start a new game
+        //-MWB_1/26/2019
         private void EnableAllSquares()
         {
             for (int row = 0; row < SIZE; row++)
             {
                 for (int col = 0; col < SIZE; col++)
                 {
-                    Label square = GetSquare(row, col);
-                    square.Click += new System.EventHandler(this.label_Click);
+                    arrayBoard[row, col] = GetSquare(row, col);
+                    arrayBoard[row, col].Click += new System.EventHandler(this.label_Click);
                 }
             }
         }
@@ -307,19 +377,37 @@ namespace TicTacToe
         //* TODO:  Finish this method
         // It should set the text property of each square in the UI to the value in the corresponding element of the array
         // and disable the squares that are not empty (you don't have to enable the others because they're enabled by default.
+        //-MWB_1/26/2019????????????????????????
         private void SyncArrayAndSquares()
         {
+            for (int row = 0; row < SIZE; row++)
+            {
+                for (int col = 0; col < SIZE; col++)
+                {
+                    arrayBoard[row, col].Text = "";
+                    /*
+                    arrayBoard[row, col] = GetSquare(row, col);
+                    if (arrayBoard[row, col].ToString() != EMPTY)
+                    {
+                        DisableSquare(arrayBoard[row, col]);
+                    }
+                    */
+                }
+            }
         }
 
         //* TODO:  modify this so that it uses the array and UI methods appropriately
+        //-MWB_1/26/2019??????????????????
         private void label_Click(object sender, EventArgs e)
         {
             int winningDimension = NONE;
             int winningValue = NONE;
 
-            //Label clickedLabel = (Label)sender;
-            //clickedLabel.Text = USER_SYMBOL;
-            //DisableSquare(clickedLabel);
+            Label clickedLabel = (Label)sender;
+            clickedLabel.Text = USER_SYMBOL;
+            DisableSquare(clickedLabel);
+
+            
 
             if (IsWinner(out winningDimension, out winningValue))
             {
@@ -356,6 +444,15 @@ namespace TicTacToe
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*
+            string outString="";
+            for (int row = 0; row < SIZE; row++)
+            {
+                outString += arrayBoard[row, 0] + "\t" + arrayBoard[row, 1] + "\t" + arrayBoard[row, 2] + "\t" + arrayBoard[row, 3] + "\t" + arrayBoard[row, 4] + "\n";
+            }
+
+            MessageBox.Show(outString, "board values");
+            */
             Application.Exit();
         }
     }

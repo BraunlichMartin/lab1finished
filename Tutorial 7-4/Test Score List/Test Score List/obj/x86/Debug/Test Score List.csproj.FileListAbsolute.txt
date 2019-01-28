@@ -1,0 +1,5 @@
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-4\Test Score List\Test Score List\obj\x86\Debug\Test Score List.csprojAssemblyReference.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-4\Test Score List\Test Score List\obj\x86\Debug\Test_Score_List.Form1.resources
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-4\Test Score List\Test Score List\obj\x86\Debug\Test_Score_List.Properties.Resources.resources
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-4\Test Score List\Test Score List\obj\x86\Debug\Test Score List.csproj.GenerateResource.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-4\Test Score List\Test Score List\obj\x86\Debug\Test Score List.csproj.CoreCompileInputs.cache

@@ -1,0 +1,9 @@
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\bin\Debug\Seating Chart.exe
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\bin\Debug\Seating Chart.pdb
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.csprojAssemblyReference.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating_Chart.Form1.resources
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating_Chart.Properties.Resources.resources
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.csproj.GenerateResource.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.csproj.CoreCompileInputs.cache
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.exe
+F:\Lane community college programs\classes starting 2019-1-7 winter\C sharp part 2\week 2\lab1\lab1-BraunlichMartin\Tutorial 7-3\Seating Chart\Seating Chart\obj\x86\Debug\Seating Chart.pdb
